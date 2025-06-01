@@ -26,10 +26,15 @@ function Login() {
     }
 
     return (
+<<<<<<< HEAD
         <div className='flex items-center justify-center w-full my-16' >
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 `} style={{ backgroundColor: '#FFFDF6' ,
              boxShadow: '0 4px 20px rgba(192,192,192,0.5), 0 0 10px rgba(255,255,255,0.4) inset'
         }}>
+=======
+        <div className='flex items-center justify-center w-full'>
+        <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
+>>>>>>> 8074a19602c7a711c84d6e10eb8547674c1ddfb3
         <div className="mb-2 flex justify-center">
             <span className="inline-block w-full max-w-[100px]">
                 <Logo width="100%" />
@@ -70,7 +75,11 @@ function Login() {
                 />
                 <Button
                 type="submit"
+<<<<<<< HEAD
                 className="w-full shadow-inner" style={{ backgroundColor: '#4A4947' }}
+=======
+                className="w-full"
+>>>>>>> 8074a19602c7a711c84d6e10eb8547674c1ddfb3
                 >Sign in</Button>
             </div>
         </form>

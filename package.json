@@ -13,7 +13,10 @@
     "@reduxjs/toolkit": "^2.3.0",
     "@tinymce/tinymce-react": "^5.1.1",
     "appwrite": "^16.0.2",
+<<<<<<< HEAD
     "framer-motion": "^12.15.0",
+=======
+>>>>>>> 8074a19602c7a711c84d6e10eb8547674c1ddfb3
     "html-react-parser": "^5.1.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

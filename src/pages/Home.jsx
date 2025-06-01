@@ -2,7 +2,10 @@ import React, {useEffect, useState} from 'react'
 import { Container, PostCard } from '../components'
 import appwriteService from '../appwrite/config'
 import { Link } from 'react-router-dom'
+<<<<<<< HEAD
 import BlogLandingPage from '../pages/Landing'
+=======
+>>>>>>> 8074a19602c7a711c84d6e10eb8547674c1ddfb3
 
 function Home() {
 
@@ -19,6 +22,7 @@ function Home() {
 
     if (posts.length === 0) {
         return (
+<<<<<<< HEAD
             <div className="w-full text-center">
                 <Container>
                     <div className="flex flex-wrap">
@@ -27,6 +31,14 @@ function Home() {
                                 <Link to="/login">
                                 <BlogLandingPage/>
                                 </Link>
+=======
+            <div className="w-full py-8 mt-4 text-center">
+                <Container>
+                    <div className="flex flex-wrap">
+                        <div className="p-2 w-full">
+                                        <h1 className="text-2xl font-bold hover:text-gray-500">
+                                <Link to="/login">Login to read posts</Link>
+>>>>>>> 8074a19602c7a711c84d6e10eb8547674c1ddfb3
                             </h1>
                         </div>
                     </div>
