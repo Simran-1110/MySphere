@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import blogImage from "../assets/group.png";
 
 export default function BlogLandingPage() {
   return (
@@ -30,7 +31,7 @@ export default function BlogLandingPage() {
         </motion.div>
 
         <motion.img
-          src="../src/assets/group.png"
+          src={blogImage}
           alt="Blog Hero"
           className="md:w-1/4 mb-8 md:mb-0 h-64 w-32"
           initial={{ x: 50, opacity: 0 }}
