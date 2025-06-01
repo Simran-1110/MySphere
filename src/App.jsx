@@ -23,19 +23,11 @@ function App() {
   }, [])
   
   return !loading ? (
-<<<<<<< HEAD
     <div className='min-h-screen flex flex-wrap content-between' style={{ backgroundColor: '#FDFBEE' }}>
       <div className='w-full block'>
         <Header />
         <main> 
         <Outlet />
-=======
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
-      <div className='w-full block'>
-        <Header />
-        <main>
-        TODO:  <Outlet />
->>>>>>> 8074a19602c7a711c84d6e10eb8547674c1ddfb3
         </main>
         <Footer />
       </div>
