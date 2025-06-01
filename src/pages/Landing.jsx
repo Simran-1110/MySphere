@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import blogImage from "../assets/group.png";
+import blogImage from "../assets/Group.png";
 
 export default function BlogLandingPage() {
   return (
