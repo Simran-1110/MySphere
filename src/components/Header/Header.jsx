@@ -11,7 +11,7 @@ function Header() {
     {
       name: 'Home',
       slug: "/",
-      active: true
+      active: !authStatus,
     }, 
     {
       name: "Login",

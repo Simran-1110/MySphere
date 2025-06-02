@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import blogImage from "../assets/Group.png";
+import { Link } from "react-router-dom";
 
 export default function BlogLandingPage() {
   return (
@@ -21,13 +22,11 @@ export default function BlogLandingPage() {
           <p className="text-lg text-[#93793d]">
             Explore thoughtful articles, inspiring stories, and practical guides on lifestyle, tech, and creativity.
           </p>
-          <a
-            href="#blogs"
-            className="inline-block bg-white text-[#4A4947] font-semibold px-6 py-3 rounded-full border border-[#4A4947]/30 shadow-md hover:bg-[#F5F5F5] hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out
-"
-          >
-            Explore Blogs
-          </a>
+          <Link to="/login">
+            <div className="inline-block bg-white text-[#4A4947] font-semibold px-6 py-3 mt-2 rounded-full border border-[#4A4947]/30 shadow-md hover:bg-[#F5F5F5] hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
+              Explore Blogs
+            </div>
+          </Link>
         </motion.div>
 
         <motion.img

@@ -23,10 +23,8 @@ function Home() {
                 <Container>
                     <div className="flex flex-wrap">
                         <div className=" w-full min-h-60">
-                                        <h1 className="text-2xl font-bold hover:text-gray-500">
-                                <Link to="/login">
+                            <h1 className="text-2xl font-bold hover:text-gray-500">
                                 <BlogLandingPage/>
-                                </Link>
                             </h1>
                         </div>
                     </div>

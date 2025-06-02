@@ -31,40 +31,49 @@ export default function Post() {
             }
         });
     };
-    console.log("userdata", userData);
-    console.log("post", post);
+    // console.log("userdata", userData);
+    // console.log("post", post);
     return post ? (
-        <div className="py-8">
-            <Container>
-                <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
-                {post.featuredImage && ( 
-                    <img 
-                        src={appwriteService.getFilePreview(post.featuredImage)} 
-                        alt={post.title} 
-                        className="rounded-xl" 
-                    /> 
-                )}
+        
 
-                    {isAuthor && (
-                        <div className="absolute right-6 top-6">
-                            <Link to={`/edit-post/${post.$id}`}>
-                                <Button bgColor="bg-green-500" className="mr-3">
-                                    Edit
-                                </Button>
-                            </Link>
-                            <Button bgColor="bg-red-500" onClick={deletePost}>
-                                Delete
-                            </Button>
-                        </div>
+            <Container>
+                <div className="py-8 flex flex-row justify-around items-stretch">
+                <div className=" flex justify-center items-center mb-4 relative rounded-xl p-2 border">
+                    {post.featuredImage && ( 
+                        <img 
+                            src={appwriteService.getFilePreview(post.featuredImage)} 
+                            alt={post.title} 
+                            className="rounded-xl max-h-screen max-w-full object-cover" 
+                        /> 
                     )}
+
+                        {isAuthor && (
+                            <div className="absolute right-6 top-6">
+                                <Link to={`/edit-post/${post.$id}`}>
+                                    <Button bgColor="bg-green-500" className="mr-3">
+                                        Edit
+                                    </Button>
+                                </Link>
+                                <Button bgColor="bg-red-500" onClick={deletePost}>
+                                    Delete
+                                </Button>
+                            </div>
+                        )}
                 </div>
-                <div className="w-full mb-6">
-                    <h1 className="text-2xl font-bold">{post.title}</h1>
-                </div>
-                <div className="browser-css">
-                    {parse(String(post.content))}
+                <div className="max-w-[50%]">
+                    <div className=" mb-6">
+                        <h1 className="text-2xl font-bold text-center uppercase">{post.title}</h1>
                     </div>
+                    <div className="flex justify-center items-center mb-6 px-10">
+                        <div className="flex items-center border shadow-lg bg-[snow] rounded-lg p-4">
+                    <div className="browser-css text-center">
+                        {parse(String(post.content))}
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </Container>
-        </div>
+
     ) : null;
 }
