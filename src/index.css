@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --color-primary: #4A4947;
+  --color-accent: #CDA74E;
+  --color-bg: #FAFAFA;
+}
+
+body {
+  @apply font-sans bg-[var(--color-bg)] text-[var(--color-primary)];
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
